@@ -7,9 +7,9 @@ import Clock from 'components/Clock';
 import styles from 'components/styles';
 import {randomNumber, clock} from 'actions';
 
-const seconds = (n) => n * 1000;
+const seconds = (time) => time * 1000;
 
-@connect(s => s)
+@connect(state => state)
 export default class Home extends React.Component {
   static propTypes = {
     dispatch: React.PropTypes.func,

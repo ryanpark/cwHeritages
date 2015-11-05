@@ -7,7 +7,7 @@ export default () => ({ dispatch, getState }) => next => action => {
     return next(action);
   }
   next({ ...rest, type });
-  return promise().then(r => r.data).then(result => {
+  return promise().then(response => response.data).then(result => {
     next({ ...rest, result, type: `${type}__OK` });
   }).catch((error) => next({...rest, error, type: `${type}__FAIL`}));
 };
