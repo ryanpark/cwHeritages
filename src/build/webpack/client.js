@@ -67,7 +67,7 @@ webpackConfig.plugins.push(commonChunkPlugin);
 // Environment-Specific Defaults
 // ----------------------------------
 if (globals.__DEV__) {
-  webpackConfig.entry.app.push(`webpack-dev-server/client?${config.get('webpack_public_path') }`, `webpack/hot/dev-server`);
+  webpackConfig.entry.app.push(`webpack-dev-server/client?${config.get('webpack_public_path') }`, `webpack/hot/only-dev-server`);
 
   webpackConfig.plugins.push(new webpack.HotModuleReplacementPlugin(), new webpack.NoErrorsPlugin());
 }
