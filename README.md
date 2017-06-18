@@ -1,2 +1,2 @@
-# simple-react-redux-starter-kit
-react+router+redux+hot-reload+surge
+# Australia's Commonwealth Heritage List
+Australia's Commonwealth Heritage List
